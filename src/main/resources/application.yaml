@@ -11,5 +11,12 @@ spring:
       hibernate:
         dialect: org.hibernate.community.dialect.SQLiteDialect
     open-in-view: false
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: llama3.2
 
-#TODO 2: add SpringAI configuration properties here
+openrouter:
+  system-prompt: ${OPENROUTER_SYSTEM_PROMPT:You are General Grievous.}
